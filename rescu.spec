@@ -4,6 +4,7 @@ Release: 1%{?dist}
 Summary: Lightweight Rest client utility for Java
 
 Group: System Environment/Libraries
+#Missing LICENSE file, upstream have been asked to provide one
 License: MIT
 URL: https://github.com/mmazi/rescu
 Source0: https://github.com/mmazi/%{name}/archive/%{name}-%{version}.tar.gz
