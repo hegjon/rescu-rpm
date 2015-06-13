@@ -7,6 +7,7 @@ Summary: Lightweight Rest client utility for Java
 License: MIT
 URL: https://github.com/mmazi/rescu
 Source0: https://github.com/mmazi/%{name}/archive/%{name}-%{version}.tar.gz
+Source1: rescu-LICENSE
 BuildArch: noarch
 
 BuildRequires: maven-local
@@ -35,6 +36,7 @@ This package contains the API documentation for %{name}.
 
 %prep
 %setup -q -n rescu-rescu-%{version}
+cp -p %{SOURCE1} LICENSE
 
 %build
 %mvn_build
@@ -44,9 +46,11 @@ This package contains the API documentation for %{name}.
 
 %files -f .mfiles
 %doc README.md
+%license LICENSE
 
 %files javadoc -f .mfiles-javadoc
 %doc README.md
+%license LICENSE
 
 %changelog
 * Sat Jun 13 2015 Jonny Heggheim <hegjon@gmail.com> - 1.7.2-1
