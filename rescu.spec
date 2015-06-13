@@ -14,6 +14,7 @@ BuildRequires: maven-local
 BuildRequires: mvn(javax.ws.rs:jsr311-api)
 BuildRequires: mvn(com.fasterxml.jackson.core:jackson-databind)
 BuildRequires: mvn(org.slf4j:slf4j-api)
+BuildRequires: mvn(net.iharder:base64)
 
 #Tests
 BuildRequires: mvn(ch.qos.logback:logback-classic)
@@ -37,6 +38,10 @@ This package contains the API documentation for %{name}.
 %prep
 %setup -q -n rescu-rescu-%{version}
 cp -p %{SOURCE1} LICENSE
+
+rm -rf src/main/java/si/mazi/rescu/utils/Base64.java
+find ./ -name "*.java" -exec sed -i "s/si.mazi.rescu.utils.Base64/net.iharder.Base64/g" {} +
+%pom_add_dep net.iharder:base64:2.3.8
 
 %build
 %mvn_build
