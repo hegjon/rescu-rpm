@@ -43,7 +43,6 @@ This package contains the API documentation for %{name}.
 %mvn_install
 
 %files -f .mfiles
-%dir %{_javadir}/%{name}
 %doc README.md
 
 %files javadoc -f .mfiles-javadoc
