@@ -22,8 +22,6 @@ BuildRequires: mvn(org.hamcrest:hamcrest-all)
 BuildRequires: mvn(joda-time:joda-time)
 BuildRequires: mvn(org.mockito:mockito-all)
 
-Requires: java-headless >= 1:1.6.0
-
 %description
 ResCU enables the user to create a proxy Rest client in run-time directly from a
 JAX-RS annotated interface. ResCU is mostly focused on json-based services, and
