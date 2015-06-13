@@ -1,4 +1,5 @@
 Name: rescu
+#MultiBit HD requires this version
 Version: 1.7.2
 Release: 1%{?dist}
 Summary: Lightweight Rest client utility for Java
