@@ -11,7 +11,6 @@ Summary: Lightweight Rest client utility for Java
 License: MIT
 URL: https://github.com/mmazi/rescu
 Source0: https://github.com/mmazi/%{name}/archive/%{revision}.tar.gz
-Source1: rescu-LICENSE
 BuildArch: noarch
 
 BuildRequires: maven-local
