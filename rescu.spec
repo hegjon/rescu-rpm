@@ -1,7 +1,5 @@
 #Not released yet
 %define revision 1dfa94b3bd68dff9033813234fbf948179fe6f17
-#Missing some test dependencies
-%define _without_tests 1
 
 Name: rescu
 Version: 1.8.2
@@ -34,7 +32,11 @@ This package contains the API documentation for %{name}.
 %setup -q -n rescu-%{revision}
 
 %build
-%mvn_build
+# Skip tests for now, missing dependencies:
+# org.assertj:assertj-core:2.1.0
+# eu.codearte.catch-exception:catch-exception:1.4.4
+# org.hamcrest:hamcrest-junit:2.0.0.0
+%mvn_build -f
 
 %install
 %mvn_install
