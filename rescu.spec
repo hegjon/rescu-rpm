@@ -5,7 +5,7 @@
 
 Name: rescu
 Version: 1.8.2
-Release: 0%{?dist}
+Release: 0.1%{?dist}
 Summary: Lightweight Rest client utility for Java
 
 License: MIT
@@ -48,5 +48,5 @@ This package contains the API documentation for %{name}.
 %license LICENSE.txt
 
 %changelog
-* Tue Jun 16 2015 Jonny Heggheim <hegjon@gmail.com> - 1.8.2-0
+* Tue Jun 16 2015 Jonny Heggheim <hegjon@gmail.com> - 1.8.2-0.1
 - Inital packaging
