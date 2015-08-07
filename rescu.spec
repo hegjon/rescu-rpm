@@ -1,9 +1,10 @@
 #Not released yet
-%define revision 1dfa94b3bd68dff9033813234fbf948179fe6f17
+%global revision 1dfa94b3bd68dff9033813234fbf948179fe6f17
+%global short_sha 1dfa94b
 
 Name: rescu
 Version: 1.8.2
-Release: 0.1%{?dist}
+Release: 0.1.git%{short_sha}%{?dist}
 Summary: Lightweight Rest client utility for Java
 
 License: MIT
@@ -50,5 +51,5 @@ This package contains the API documentation for %{name}.
 %license LICENSE.txt
 
 %changelog
-* Tue Jun 16 2015 Jonny Heggheim <hegjon@gmail.com> - 1.8.2-0.1
+* Fri Aug 07 2015 Jonny Heggheim <hegjon@gmail.com> - 1.8.2-0.1.git1dfa94b
 - Inital packaging
