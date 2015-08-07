@@ -1,6 +1,6 @@
 #Not released yet
-%global revision 35ef764e51005ce0d31dc90c0bd9227f6082fb01
-%global short_sha 35ef764
+%global revision beb9897f079d03f585633672fd9d2be1f8ed8e33
+%global short_sha beb9897
 
 Name: rescu
 Version: 1.8.2
@@ -51,5 +51,5 @@ This package contains the API documentation for %{name}.
 %license LICENSE.txt
 
 %changelog
-* Fri Aug 07 2015 Jonny Heggheim <hegjon@gmail.com> - 1.8.2-0.1.git35ef764
+* Fri Aug 07 2015 Jonny Heggheim <hegjon@gmail.com> - 1.8.2-0.1.gitbeb9897
 - Inital packaging
